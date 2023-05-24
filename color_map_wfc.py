@@ -7,7 +7,7 @@ import time
 
 RESTRICTION_RANGE = 20
 
-FILE_NAME = 'field'
+FILE_NAME = 'res/template'
 
 def fill_field(field, seeds, size, field_json):
     for y in range(0, size):
@@ -98,7 +98,7 @@ def get_most_restricted_pixel_slow(field):
                         continue
 
                     if field[target_x][target_y] != (-1, -1, -1):
-                        restricted_slots += 1;
+                        restricted_slots += 1
 
             # Add pixel to dict with key corresponding to # of restrictions
             util.add_to_array_in_dict(pixels, restricted_slots, (x, y))
@@ -142,6 +142,12 @@ field = []
 seeds = field_json['seeds']
 size = field_json['size']
 fill_field(field, seeds, size, field_json)
+
+# Use pixels field
+
+# hep = has empty pixels time
+# mrp = most restricted pixel
+# 
 
 # Run WFC
 while has_empty_pixels(field):
