@@ -18,26 +18,26 @@
     ],
     "Land": [
         [
-            ["Land", "TLBeach", "TBeach", "LBeach", "BLBeach"],
-            ["Land", "TBeach"],
-            ["Land", "TRBeach", "TBeach", "RBeach", "TLBeach"]
+            ["Land", "TLBeach", "TBeach", "LBeach", "TRBeach", "BLBeach"],
+            ["Land", "TBeach", "TLBeach", "TRBeach"],
+            ["Land", "TRBeach", "TBeach", "RBeach", "TLBeach", "BRBeach"]
         ],
         [
-            ["Land", "LBeach", "TLBeach"],
+            ["Land", "LBeach", "TLBeach", "BLBeach"],
             [],
-            ["Land", "RBeach"]
+            ["Land", "RBeach", "TRBeach", "BRBeach"]
         ],
         [
-            ["Land", "BLBeach", "BBeach", "LBeach", "TLBeach"],
+            ["Land", "BLBeach", "BBeach", "LBeach", "TLBeach", "BRBeach"],
             ["Land", "BBeach", "BLBeach", "BRBeach"],
-            ["Land", "BRBeach", "BBeach", "RBeach", "BLBeach"]
+            ["Land", "BRBeach", "BBeach", "RBeach", "BLBeach", "TRBeach"]
         ]
     ],
    "BBeach": [
         [
-            ["Land", "LBeach", "TBeach"],
-            ["Land", "TBeach"],
-            ["Land", "RBeach", "TBeach"]
+            ["Land", "LBeach", "TBeach", "TRBeach", "TLBeach", "BLBeach"],
+            ["Land", "TBeach", "TRBeach", "TLBeach"],
+            ["Land", "RBeach", "TBeach", "TRBeach", "TLBeach", "BRBeach"]
         ],
         [
             ["BBeach", "BRBeach"],
@@ -52,7 +52,7 @@
     ],
     "BLBeach": [
         [
-            ["Land", "TRBeach", "TLBeach", "TBeach"],
+            ["Land", "TRBeach", "TLBeach", "TBeach", "BLBeach", "LBeach"],
             ["Land", "TLBeach", "TRBeach", "TBeach"],
             ["Land", "TLBeach", "TBeach", "TRBeach", "BRBeach", "RBeach"]
         ],
@@ -71,7 +71,7 @@
         [
             ["Land", "TLBeach", "BLBeach", "TBeach", "LBeach", "TRBeach"],
             ["Land", "TBeach", "TLBeach", "TRBeach"],
-            ["Land", "TLBeach", "TBeach", "TRBeach"]
+            ["Land", "TLBeach", "TBeach", "TRBeach", "RBeach", "BRBeach"]
         ],
         [
             ["Land", "TLBeach", "BLBeach", "LBeach"],
@@ -79,7 +79,7 @@
             ["BBeach", "BLBeach"]
         ],
         [
-            ["LBeach", "Land", "BLBeach", "TLBeach"],
+            ["LBeach", "Land", "BLBeach", "TLBeach", "BRBeach", "BBeach"],
             ["TRBeach", "RBeach"],
             ["Ocean", "TBeach", "LBeach", "TLBeach"]
         ]
@@ -88,7 +88,7 @@
         [
             ["BRBeach", "Ocean", "RBeach", "BBeach"],
             ["LBeach", "BLBeach"],
-            ["Land", "RBeach", "BRBeach"]
+            ["Land", "RBeach", "BRBeach", "TLBeach", "TRBeach", "TBeach"]
         ],
         [
             ["Ocean", "RBeach"],
@@ -98,12 +98,12 @@
         [
             ["Ocean", "RBeach", "TRBeach", "TBeach"],
             ["TLBeach", "LBeach"],
-            ["Land", "TRBeach", "RBeach", "BRBeach"]
+            ["Land", "TRBeach", "RBeach", "BRBeach", "BBeach", "BLBeach"]
         ]
     ],
     "RBeach": [
         [
-            ["Land", "LBeach", "TLBeach", "BLBeach"],
+            ["Land", "LBeach", "TLBeach", "BLBeach", "TBeach", "TRBeach"],
             ["RBeach", "BRBeach"],
             ["Ocean", "BLBeach", "BBeach", "LBeach"]
         ],
@@ -113,16 +113,16 @@
             ["Ocean", "LBeach"]
         ],
         [
-            ["LBeach", "Land", "TLBeach", "BLBeach"],
+            ["LBeach", "Land", "TLBeach", "BLBeach", "BBeach", "BRBeach"],
             ["RBeach", "TRBeach"],
             ["Ocean", "LBeach", "TLBeach", "TBeach"]
         ]
     ],
     "TBeach": [
         [
-            ["Ocean", "BBeach", "RBeach"],
+            ["Ocean", "BBeach", "RBeach", "BRBeach"],
             ["Ocean", "BBeach"],
-            ["Ocean", "BBeach", "LBeach"]
+            ["Ocean", "BBeach", "LBeach", "BLBeach"]
         ],
         [
             ["TRBeach", "TBeach"],
@@ -130,16 +130,16 @@
             ["TLBeach", "TBeach"]
         ],
         [
+            ["BLBeach", "BBeach", "BRBeach", "Land", "LBeach", "TLBeach"],
             ["BLBeach", "BBeach", "BRBeach", "Land"],
-            ["BLBeach", "BBeach", "BRBeach", "Land"],
-            ["BBeach", "BRBeach", "BLBeach", "Land"]
+            ["BBeach", "BRBeach", "BLBeach", "Land", "TRBeach", "RBeach"]
         ]
     ],
     "TLBeach": [
         [
             ["Ocean", "RBeach", "BBeach", "BRBeach"],
             ["LBeach", "BLBeach"],
-            ["Land", "RBeach", "BRBeach"]
+            ["Land", "RBeach", "BRBeach", "TRBeach", "TBeach", "TLBeach"]
         ],
         [
             ["TBeach", "TRBeach"],
@@ -147,14 +147,14 @@
             ["Land", "RBeach", "BRBeach", "TRBeach"]
         ],
         [
-            ["Land", "BBeach", "BRBeach"],
+            ["Land", "BBeach", "BRBeach", "TLBeach", "BLBeach", "LBeach"],
             ["Land", "BBeach", "BRBeach", "BLBeach"],
             ["Land", "BLBeach", "TRBeach", "RBeach", "BBeach", "BRBeach"]
         ]
     ],
     "TRBeach": [
         [
-            ["Land", "BLBeach", "LBeach"],
+            ["Land", "TLBeach", "TRBeach", "BLBeach", "TBeach", "LBeach"],
             ["RBeach", "BRBeach"],
             ["Ocean", "BLBeach", "LBeach", "BBeach"]
         ],
@@ -166,7 +166,7 @@
         [
             ["Land", "LBeach", "BLBeach", "BBeach", "BRBeach", "TLBeach"],
             ["Land", "BLBeach", "BRBeach", "BBeach"],
-            ["Land", "BLBeach", "BBeach"]
+            ["Land", "BLBeach", "BBeach", "TRBeach", "BRBeach", "RBeach"]
         ]
     ],
     "DEBUGGING": [
