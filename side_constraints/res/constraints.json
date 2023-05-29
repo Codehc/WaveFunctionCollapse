@@ -1,0 +1,93 @@
+{
+    "Ocean": {
+        "weight": 20,
+        "tags": [
+            "water",
+            "water", "water",
+            "water",
+            "water", "water",
+            "water",
+            "water", "water",
+            "water",
+            "water", "water"
+        ]
+    },
+    "Land": {
+        "weight": 20,
+        "tags": [
+            "land",
+            "land", "land",
+            "land",
+            "land", "land",
+            "land",
+            "land", "land",
+            "land",
+            "land", "land"
+        ]
+    },
+    "SideBeach": {
+        "weight": 1,
+        "tags": [
+            "land",
+            "land", "water",
+            "water",
+            "water", "water",
+            "water",
+            "water", "land",
+            "land",
+            "land", "land"
+        ]
+    },
+    "CornerBeach": {
+        "weight": 1,
+        "tags": [
+            "land",
+            "land", "water",
+            "water",
+            "water", "land",
+            "land",
+            "land", "land",
+            "land",
+            "land", "land"
+        ]
+    },
+    "DiagonalSplit": {
+        "weight": 1,
+        "tags": [
+            "land",
+            "land", "water",
+            "water",
+            "water", "land",
+            "land",
+            "land", "water",
+            "water",
+            "water", "land"
+        ]
+    },
+    "CornerLand": {
+        "weight": 1,
+        "tags": [
+            "water",
+            "water", "land",
+            "land",
+            "land", "water",
+            "water",
+            "water", "water",
+            "water",
+            "water", "water"
+        ]
+    },
+    "DEBUGGING": {
+        "weight": 5,
+        "tags": [
+            "all",
+            "all", "all",
+            "all",
+            "all", "all",
+            "all",
+            "all", "all",
+            "all",
+            "all", "all"
+        ]
+    }
+}
