@@ -7,8 +7,6 @@ import time
 
 RESTRICTION_RANGE = 20
 
-FILE_NAME = 'res/template'
-
 def fill_field(field, seeds, size, field_json):
     for y in range(0, size):
         row_local = []
@@ -135,7 +133,7 @@ si_time = 0
 si_times = []
 
 # Setup field
-field_json = open(f'{FILE_NAME}.json')
+field_json = open(f'./res/seed.json')
 field_json = json.load(field_json)
 
 field = []
@@ -215,7 +213,7 @@ while has_empty_pixels(field):
     si_time = time.time()
     array = np.array(field, dtype=np.uint8)
     new_image = Image.fromarray(array)
-    new_image.save(f'{FILE_NAME}.png')
+    new_image.save(f'./out/map.png')
     si_times.append(time.time() - si_time)
 
     hep_time = time.time()
